@@ -1,19 +1,18 @@
 function quadraticFormula(a, b, c) {
     let discriminant = b * b - 4 * a * c;
     if (discriminant < 0) {
-      return null; // No existen soluciones reales
+      return null; 
     } else if (discriminant === 0) {
       let x = -b / (2 * a);
-      return [x, x]; // Solo hay una solución
+      return [x, x]; 
     } else {
       let sqrtDiscriminant = Math.sqrt(discriminant);
       let x1 = (-b + sqrtDiscriminant) / (2 * a);
       let x2 = (-b - sqrtDiscriminant) / (2 * a);
-      return [x1, x2]; // Hay dos soluciones
+      return [x1, x2]; 
     }
   }
   
-  //Ingresar los valores para el calculo:
   let a, b, c;
   a = prompt("ingresar numero");
   b = prompt("ingresar numero");
